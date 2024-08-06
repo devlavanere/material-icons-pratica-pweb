@@ -1,0 +1,12 @@
+<h2>Lista de Produtos</h2>
+<mat-card *ngFor="let produto of produtos" class="produto-card">
+  <mat-card-content>
+    <div class="produto-info">
+      <span>{{ produto.nome }}</span>
+      <span>{{ produto.preco | currency }}</span>
+    </div>
+    <button mat-button color="warn" (click)="removerProduto(produto.id)">
+      <mat-icon>delete</mat-icon> Remover
+    </button>
+  </mat-card-content>
+</mat-card>

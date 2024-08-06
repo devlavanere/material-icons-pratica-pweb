@@ -1,0 +1,27 @@
+.produto-card {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+  
+  .produto-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  button[mat-button] {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  
+    &:hover {
+      background-color: #ff5252;
+      color: white;
+    }
+  }
